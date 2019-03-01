@@ -4,6 +4,7 @@
 *.userosscache
 *.sln.ide
 *.bat
+*.bak
 TestResults/*
 .vs/*
 
