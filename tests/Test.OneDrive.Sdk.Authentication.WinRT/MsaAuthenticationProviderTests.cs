@@ -24,7 +24,7 @@ namespace Test.OneDrive.Sdk.Authentication.WinRT
 {
     using System;
     using System.Threading.Tasks;
-    
+
     using Microsoft.OneDrive.Sdk.Authentication;
     using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
     using Mocks;
@@ -39,7 +39,7 @@ namespace Test.OneDrive.Sdk.Authentication.WinRT
     {
         private readonly string clientId = "client ID";
         private readonly string returnUrl = "https://localhost/return";
-        private readonly string[] scopes = new string[] { "scopes" };
+        private readonly string[] scopes = new string[] { "scopes" };        
 
         private MsaAuthenticationProvider authenticationProvider;
         private MockCredentialCache credentialCache;
@@ -68,7 +68,7 @@ namespace Test.OneDrive.Sdk.Authentication.WinRT
         {
             const string code = "code";
             const string token = "token";
-            
+
             this.signOut = false;
             this.webAuthenticationUi.responseValues = new Dictionary<string, string> { { OAuthConstants.CodeKeyName, code } };
             this.webAuthenticationUi.OnAuthenticateAsync = (Uri requestUri, Uri callbackUri) =>
